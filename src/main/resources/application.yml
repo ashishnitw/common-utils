@@ -1,0 +1,17 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: common-utils
+  jackson:
+    default-property-inclusion: non_null
+    deserialization:
+      fail-on-unknown-properties: false
+    property-naming-strategy: SNAKE_CASE
+  kafka:
+    bootstrap-servers: ''
+    listener:
+      poll-timeout: 10000
+    consumer:
+      enable-auto-commit: false
+      max-poll-records: 100
